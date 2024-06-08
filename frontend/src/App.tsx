@@ -3,6 +3,7 @@ import {
   Route,
   Routes,
   Navigate,
+  
 } from "react-router-dom";
 import "./index.css";
 import Layout from "./layouts/Layout";
@@ -12,6 +13,7 @@ import { useAppContext } from "./contexts/AppContext";
 import AddHotel from "./pages/AddHotel";
 import MyHotels from "./pages/MyHotels";
 import EditHotel from "./pages/EditHotel";
+import Search from "./pages/Search";
 
 const App = () => {
   const { isLoggedIn } = useAppContext();
@@ -31,7 +33,7 @@ const App = () => {
           element={
            
             <Layout>
-            <p>Home Page</p>
+            <Search/>
            </Layout>
           }
         />
