@@ -79,7 +79,7 @@ const ManageHotelForm = ({ onSave, isLoading, hotel }: Props) => {
       <FacilitiesSection />
         <GuestsSection />
         <ImagesSection /> 
-        <span className="flex justify-end">
+        <span className="flex justify-end px-4">
           <button
             disabled={isLoading}
             type="submit"
