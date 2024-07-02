@@ -14,7 +14,8 @@ import EditHotel from "./pages/EditHotel";
 import Search from "./pages/Search";
 import Detail from "./pages/Detail";
  import Booking from "./pages/Booking";
-// import MyBookings from "./pages/MyBookings";
+ import MyBookings from "./pages/MyBookings";
+import Home from "./pages/Home";
 // import Home from "./pages/Home";
 
 const App = () => {
@@ -26,8 +27,8 @@ const App = () => {
           path="/"
           element={
             <Layout>
-              {/* <Home /> */}
-              home
+              <Home />
+              {/* home */}
             </Layout>
           }
         />
@@ -102,6 +103,14 @@ const App = () => {
               element={
                 <Layout>
                   <MyHotels />
+                </Layout>
+              }
+            />
+             <Route
+              path="/my-bookings"
+              element={
+                <Layout>
+                  <MyBookings />
                 </Layout>
               }
             />
